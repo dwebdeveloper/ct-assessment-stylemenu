@@ -68,6 +68,9 @@ dt {
     Add a CSS ruleset to accomplish the following:
     - Make a comma appear after the name of each menu item
 */
+dt::after {
+    content: ",";
+}
 
 dd {
     display: inline;
@@ -75,7 +78,7 @@ dd {
 }
 
 dd::after {
-    content: ",";
+    content: "";
     display: block;
     clear: both;
     margin-bottom: 15px;
